@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="howToPlayBtn" class="how-to-play-btn">
+      Click here to learn how to play
+    </button>
+
+    <div id="howToPlayModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>How to Play:</h3>
+        <ul>
+          <li>Under the black box is a picture.</li>
+           <li>Guess which one is it from those visible pictures and click it</li>
+           <li>For each wrong guess, your chance reduce (10 to 0)</li>
+          <li>If your guess is correct, your correct number increase (from 0 to 3)</li>
+          <li>Once your chance hit 0, you'll lose the game and if your correct guess hit 3, you'll win.</li>
+          <li>The show button helps you uncover the black box and see the picture under it, but you can only use it once in the game.</li>
+        </ul>
+        <p>Good luck!</p>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="big-container">
+        <div class="game-content">
+          <!-- Big hidden image -->
+          <div class="black-box-container">
+            <img id="gameImage" class="black-box" />
+            <div id="overlay" class="overlay">?</div>
+          </div>
+
+          <!-- Image options -->
+          <div id="options" class="image-options-box"></div>
+        </div>
+        <div class="sub-content">
+          <!-- Game chances -->
+          <p>Chances: <span id="chances">10</span></p>
+
+          <!-- Correct guess -->
+          <p>Correct: <span id="correct">0</span></p>
+
+          <!-- Show button -->
+          <button id="showBtn" class="showButton">show 1</button>
+        </div>
+        <!-- Message display -->
+        <p id="message" class="message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
