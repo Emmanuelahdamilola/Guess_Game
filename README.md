@@ -23,7 +23,7 @@ This project was built to sharpen our frontend and JavaScript skills while worki
 
 ## 📂 Project Structure  
 ```
-guess-photo-game/
+Guess_Game/
 │── index.html      # Main HTML file
 │── style.css       # Game styles
 │── script.js       # Game logic
@@ -43,10 +43,14 @@ guess-photo-game/
 
 ## 👥 Contributors
 This project was developed by members of the **Ekiti MSME Overachiever Team**:  
-- [Your Name]  
+- Oluwakemi Adeosun  
 - Bello Emmanuelah Oluwadamilola 
-- [Teammate 2]  
-- [Teammate 3]  
+- Alabi Stephen  
+- Daramola Emmanuel
+- Isreal 1
+- Isreal 2 
+
+- Olowoyo Emmanuel Segun 
 - …  
 
 ---
@@ -54,11 +58,11 @@ This project was developed by members of the **Ekiti MSME Overachiever Team**:
 ## 🚀 Getting Started
 1. Clone the repository  
    ```bash
-   git clone https://github.com/your-username/guess-photo-game.git
+   git clone https://github.com/Emmanuelahdamilola/Guess_Game.git
    ```
 2. Navigate to the project folder  
    ```bash
-   cd guess-photo-game
+   cd Guess_Game
    ```
 3. Open `index.html` in your browser to play.  
 

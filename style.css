@@ -188,3 +188,19 @@ body {
 
 /* Show button (to reveal hidden image once) */
 
+
+
+/*high score display */
+.score-container {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+.current-score {
+  color: #333;
+  margin-bottom: 10px;
+}
+.high-score {
+  color: #e91e63; 
+}
