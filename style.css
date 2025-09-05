@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #f5b05c; 
+  background-color: #f5b05c;
 }
 
 /* ===========================
@@ -23,35 +23,37 @@ body {
   border-radius: 10px;
   margin: 30px 20px;
   cursor: pointer;
-  box-shadow: 0px 2px 3px #2e2e2e; 
+  box-shadow: 1px 2px 3px #2e2e2e;
 }
 
 /* ===========================
-  MODAL STYLING
+   MODAL STYLING
 =========================== */
 
-/* The Modal */
+/* Modal container (hidden by default) */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100vh; 
+  display: none;
+  position: fixed;
+  z-index: 1; /* sit above all other elements */
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100vh;
   overflow: auto;
-  background-color: #fff;
-  padding: 50px;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.7); /* dim background */
 }
 
-/* Modal Content/Box */
+/* Modal content box */
 .modal-content {
   background-color: #fefefe;
   padding: 20px;
-  width: 100%; 
+  width: 80%;
+  height: 500px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
-/* The Close Button */
+/* Close (×) button */
 .close {
   color: #aaa;
   float: right;
@@ -61,25 +63,31 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #ea0a0a;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-content h3{
+/* Modal typography */
+.modal-content h3 {
   font-size: 25px;
   padding-bottom: 20px;
+  padding-left: 30px;
 }
 
-.modal-content ul li{
+.modal-content ul {
+  padding-left: 30px;
+}
+
+.modal-content ul li {
   padding-bottom: 20px;
   font-size: 18px;
 }
 
-.modal-content p{
+.modal-content p {
   font-size: 18px;
+  padding-left: 30px;
 }
-
 
 /* ===========================
    MAIN CONTAINER
@@ -87,15 +95,15 @@ body {
 .game-container {
   width: 100%;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 /* ===========================
-   GAME BOX (Main Content)
+   GAME BOX (Main Game Wrapper)
 =========================== */
 .big-container {
   width: 800px;
-  background: linear-gradient(to right, #7fffd4, #ff0000, #68c4f6); 
+  background: linear-gradient(to right, #7fffd4, #ff0000, #68c4f6);
   border: 2px solid #2e2e2e;
   border-radius: 5px;
   padding: 20px;
@@ -103,15 +111,15 @@ body {
 }
 
 /* ===========================
-   MAIN IMAGE (Hidden Image)
+   MAIN IMAGE (Hidden Image Box)
 =========================== */
 .black-box-container {
   position: relative;
   width: 300px;
   height: 300px;
-  display: flex;          
-  justify-content: center;    
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .black-box {
@@ -121,13 +129,14 @@ body {
   border-radius: 10px;
 }
 
+/* Overlay (black cover with "?") */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 1); 
+  background: #000000;
   border-radius: 10px;
   color: #fff;
   display: flex;
@@ -135,8 +144,9 @@ body {
   align-items: center;
   font-size: 3rem;
 }
+
 /* ===========================
-   IMAGE OPTIONS (Choices)
+   IMAGE OPTIONS (Choice Grid)
 =========================== */
 .image-options-box {
   display: grid;
@@ -172,23 +182,9 @@ body {
 }
 
 /* ===========================
-   SUB CONTENT (Stats + Button)
+   SUB CONTENT (States + Button)
 =========================== */
-.sub-content {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.sub-content p {
-  font-size: 20px;
-}
 
-.showButton {
-  background: transparent;
-  padding: 5px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-}
+/* Show button (to reveal hidden image once) */
+

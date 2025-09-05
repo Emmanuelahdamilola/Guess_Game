@@ -3,57 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Guess Photo Game</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- =========================
+         HOW TO PLAY MODAL SECTION
+    ========================== -->
+    <!-- Button that opens the "How to Play" modal -->
     <button id="howToPlayBtn" class="how-to-play-btn">
       Click here to learn how to play
     </button>
 
+    <!-- Modal container -->
     <div id="howToPlayModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>How to Play:</h3>
-        <ul>
-          <li>Under the black box is a picture.</li>
-           <li>Guess which one is it from those visible pictures and click it</li>
-           <li>For each wrong guess, your chance reduce (10 to 0)</li>
-          <li>If your guess is correct, your correct number increase (from 0 to 3)</li>
-          <li>Once your chance hit 0, you'll lose the game and if your correct guess hit 3, you'll win.</li>
-          <li>The show button helps you uncover the black box and see the picture under it, but you can only use it once in the game.</li>
-        </ul>
-        <p>Good luck!</p>
+        
+        <!-- Close (×) button -->
+       
+
+        <!-- Game instructions -->
+        
+
       </div>
     </div>
+    <!-- End of How to Play modal -->
 
+    <!-- =========================
+         MAIN GAME CONTAINER
+    ========================== -->
     <div class="game-container">
       <div class="big-container">
+
+        <!-- Game Content Section -->
         <div class="game-content">
-          <!-- Big hidden image -->
+          
+          <!-- Hidden image with overlay (black box + question mark) -->
           <div class="black-box-container">
             <img id="gameImage" class="black-box" />
             <div id="overlay" class="overlay">?</div>
           </div>
 
-          <!-- Image options -->
+          <!-- Image options will be dynamically inserted here -->
           <div id="options" class="image-options-box"></div>
         </div>
+
+        <!-- Sub Content Section -->
         <div class="sub-content">
-          <!-- Game chances -->
-          <p>Chances: <span id="chances">10</span></p>
+          <!-- Remaining chances -->
+         
 
-          <!-- Correct guess -->
-          <p>Correct: <span id="correct">0</span></p>
+          <!-- Correct guesses -->
+          
 
-          <!-- Show button -->
-          <button id="showBtn" class="showButton">show 1</button>
+          <!-- Show hidden image button -->
+          
         </div>
-        <!-- Message display -->
+
+        <!-- Feedback message (win/lose notifications, etc.) -->
         <p id="message" class="message"></p>
       </div>
     </div>
 
+    <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
