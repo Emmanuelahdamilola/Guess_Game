@@ -45,8 +45,10 @@ guess-photo-game/
 This project was developed by members of the **Ekiti MSME Overachiever Team**:  
 - [Your Name]  
 - Bello Emmanuelah Oluwadamilola 
-- [Teammate 2]  
-- [Teammate 3]  
+- Alabi Stephen  
+- Daramola Emmanuel
+- Isreal 1
+- Isreal 2 
 - …  
 
 ---
