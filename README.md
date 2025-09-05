@@ -44,7 +44,7 @@ guess-photo-game/
 ## 👥 Contributors
 This project was developed by members of the **Ekiti MSME Overachiever Team**:  
 - [Your Name]  
-- [Teammate 1]  
+- Bello Emmanuelah Oluwadamilola 
 - [Teammate 2]  
 - [Teammate 3]  
 - …  
