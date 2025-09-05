@@ -43,7 +43,7 @@ Guess_Game/
 
 ## 👥 Contributors
 This project was developed by members of the **Ekiti MSME Overachiever Team**:  
-- [Your Name]  
+- Oluwakemi Adeosun  
 - Bello Emmanuelah Oluwadamilola 
 - [Teammate 2]  
 - [Teammate 3]  
