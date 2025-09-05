@@ -45,8 +45,12 @@ Guess_Game/
 This project was developed by members of the **Ekiti MSME Overachiever Team**:  
 - Oluwakemi Adeosun  
 - Bello Emmanuelah Oluwadamilola 
+- Alabi Stephen  
+- Daramola Emmanuel
+- Isreal 1
+- Isreal 2 
+
 - Olowoyo Emmanuel Segun 
-- [Teammate 3]  
 - …  
 
 ---
