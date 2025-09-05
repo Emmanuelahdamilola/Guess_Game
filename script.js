@@ -3,22 +3,31 @@
 =========================== */
 
 // Get the modal
-
+const modal = document.getElementById("howToPlayModal");
 
 // Get the button that opens the modal
-
+const btn = document.getElementById("howToPlayBtn");
 
 // Get the <span> element that closes the modal
-
+const span = document.getElementsByClassName("close")[0];
 
 // Open modal when "How to Play" button is clicked
-
+btn.addEventListener('click', () => {
+  modal.style.display = "block";
+}
 
 // Close modal when (×) is clicked
-
+);
+span.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
 
 // Close modal if user clicks outside the modal content
-
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+    modal.style.display = "none";
+    }
+  });
 
 
 /* ===========================
@@ -140,6 +149,7 @@ const gameOver = () => {
   optionsContainer.innerHTML = "";
 };
 
+
 /**
  * Update UI states
  * - Updates chances and correct guesses display
@@ -169,3 +179,25 @@ showBtn.addEventListener('click', () => {
 =========================== */
 loadNewRound();
 updateStates();
+
+
+/* ===========================
+   HIGH SCORE LOGIC
+=========================== */
+const currentScoreDisplay = document.getElementById('current-score');
+const highScoreDisplay = document.getElementById('high-score');
+const updateScoreBtn = document.getElementById('update-score-btn');
+let highScore = 0;
+
+// Update score button click event
+updateScoreBtn.addEventListener('click', () => {
+  const currentScore = correctGuesses * 10 + chances * 2; // Example scoring formula
+  currentScoreDisplay.textContent = currentScore;
+});
+
+// Update high score if current score exceeds it
+if (currentScore > highScore) {
+  highScore = currentScore;
+  highScoreDisplay.textContent = highScore;
+}
+// Note: High score does not reset when game restarts`
